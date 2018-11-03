@@ -1,0 +1,9 @@
+<%= link_to "nuevo perro", new_dog_path%>
+
+<%@dogs.each do |dog| %>
+  <li><%= dog.name%></li>
+  <!-- <%= link_to dog.name, "/dogs/#{dog.id}"%> -->
+
+  <!-- MAGIA DE RAILS-->
+  <%= link_to dog.name, dog%>
+<% end %>

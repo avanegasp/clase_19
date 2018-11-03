@@ -1,0 +1,8 @@
+<h1>Acá esta el nuevo perro</h1>
+
+<!-- aquí va el formulario -->
+
+<%= form_tag dogs_path, method: "post" do %>
+  <%= text_field :dog, :name %>
+  <%= submit_tag("Crear perro") %>
+<% end %>

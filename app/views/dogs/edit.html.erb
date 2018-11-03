@@ -1,0 +1,11 @@
+<h1>Llegaste al edit</h1>
+
+<%= form_tag dog_path(@dog), method: "patch" do %>
+  <%= text_field :dog, :name %>
+  <%= submit_tag("Crear perro") %>
+<% end %>
+
+<%= form_tag "/dogs/#{@dog.id}", method: "patch" do %>
+  <%= text_field :dog, :name %>
+  <%= submit_tag("Crear perro") %>
+<% end %>
